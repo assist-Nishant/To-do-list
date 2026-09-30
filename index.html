@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>To-Do List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app">
+  <h1>To-Do List</h1>
+
+  <!-- Add a task -->
+  <form id="task-form" class="add">
+    <label for="task-input" class="sr-only">New task</label>
+    <input id="task-input" type="text" placeholder="What needs to be done?" autocomplete="off" required>
+    <button type="submit" class="btn">Add task</button>
+  </form>
+
+  <!-- Task list -->
+  <ul id="task-list" class="tasks"></ul>
+
+  <!-- Empty message (shown by JavaScript when there are no tasks) -->
+  <p id="empty" class="empty" hidden>No tasks yet. Add your first one above.</p>
+
+  <!-- Footer: count + clear button -->
+  <div class="bar">
+    <span id="count">0 tasks left</span>
+    <button id="clear" class="link" type="button">Clear completed</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
